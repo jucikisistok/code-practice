@@ -12,9 +12,4 @@ def isLucky(n):
 	first_half = [int(num_str[i:i+1]) for i in range(0,half,1)]
 	second_half = [int(num_str[i:i+1]) for i in range(half,len(num_str),1)]
 	
-	if sum(first_half) == sum(second_half):
-		return True
-	return False
-
-print(isLucky(1230), "true")
-print(isLucky(239017), "false")
+	return sum(first_half) == sum(second_half)
