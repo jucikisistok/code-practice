@@ -6,7 +6,7 @@ def isLucky(n):
 
 	Given a ticket number n, this determines if it's lucky or not.
 	"""
-	
+
 	num_str = str(n)
 	half = int(len(num_str)/2)
 	first_half = [int(num_str[i:i+1]) for i in range(0,half,1)]
