@@ -14,7 +14,3 @@ def areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight):
 	friend = [friendsLeft, friendsRight]
 
 	return Counter(you) == Counter(friend)
-
-print(areEquallyStrong(10,15,15,10), "should be true")
-print(areEquallyStrong(15,10,15,10), "should be true")
-print(areEquallyStrong(15,10,15,9), "should be true")
